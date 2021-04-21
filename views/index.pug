@@ -1,0 +1,73 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | EDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+
+    section#introSection
+        div Welcome to Expert's Dance Academy
+        div.small Let's start dance
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/111.png")
+                div.card-content
+                    p already know basic moves, time to make them perfect
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/222.png")
+                div.card-content
+                    p Learn free style dance with or without partner    
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/333.png")
+
+                div.card-content
+                    p preparing for dance competitions, let experts show you how to do it               
+    section#sponsorSection
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/img/apple.png",class="spImage")
+            img(src="/static/img/go.png",class="spImage")
+            img(src="/static/img/ms.png",class="spImage")
+            img(src="/static/img/am.png",class="spImage")
+    section#contactSection
+        h2 Contact Us
+        form(action="/" method = "post")
+            div.form-group
+                input(type="text" name="Name" placeholder="Enter your Name")
+            div.form-group
+                input(type="text" name="Age" placeholder="Enter your Age")
+            div.form-group
+                input(type="text" name="Gender" placeholder="Enter your Gender")
+            div.form-group
+                input(type="text" name="email" placeholder="Enter your Email-id")
+            div.form-group
+                input(type="text" name="phone" placeholder="Enter your Phone no.")   
+            button(class ="btn")
+                |Submit
+    footer#footer
+        | Copyright © www.expertdanceacademy.com | All Rights Reserved
+
+    script
+      include ../static/index.js
